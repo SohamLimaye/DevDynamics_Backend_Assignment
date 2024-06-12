@@ -1,0 +1,22 @@
+Problem Statement 2 : Implement inventory management system
+You need to implement an inventory management system for an ecommerce store. An
+inventory management system allows administrators to add products to inventory , remove
+products from inventory.
+The discount coupon should be a separate data structure that includes:
+Discount Percentage (%): The percentage discount to be applied.
+Maximum Discount Cap: The maximum amount that can be discounted from the cart.
+Example: A 20% coupon with a maximum discount of 150 Rs on the cart value.
+Note: You should use internal data structures for this implementation, without relying on any
+external database or service.
+You need to implement following API:
+(1) AddItemToInventory(productId,quantity) : This API will be used to add an item to the
+inventory
+(2) RemoveItemFromInventory(productId,quantity) : This API will be used to remove an item
+from inventory
+(3) AddItemToCart(customerId,productId,quantity) : This API will be used by customers to
+buy items and add the items to the shopping cart. This API will check if item is present in
+inventory or not
+(4) ApplyDiscountCoupon(cartValue,discountId): This API will be used to calculate the
+Discounted price of overall cart value.
+Please write a driver function to demonstrate the flow of the application and maintain a
+ReadMe doc for a brief overview of implementation. Bonus points for covering edge cases
